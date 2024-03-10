@@ -1,30 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
   font-family: plain-font;
   src: url(./assets/font/plain-regular-webfont.ttf);
 }
+
 *{
+  overflow: hidden;
   margin: 0;
+  
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins'; */
   font-weight: 600;
   font-family: plain-font;
-  /* overflow: hidden; */
 }
 .search{
   padding: 1vw 2vw;
-  /* background-color: yellowgreen; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .search h3{
   font-size: 2vw;
   display: flex;
@@ -37,14 +34,39 @@
 .search form{
   display: flex;
   align-items: center;
-  gap: 2vw;
-  justify-content: center;
+  /* gap: 2vw; */
+  justify-content: end;
+  width: 20vw;
+  height: 6vh;
+  /* background-color: yellowgreen; */
+}
+.search form input{
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  width: 80%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 .search form button{
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(255, 255, 255, 0.418);
   border: none;
+  height: 100%;
   cursor: pointer;
   color: black;
+  width: 20%;
+}
+.search form button svg{
+  width: 1vw;
+  color: white;
 }
 .info-box{
   /* background-color: yellowgreen; */
@@ -103,7 +125,61 @@
 }
 
 @media only screen and (max-width: 600px) {
- .info-city{
+ .search{
+  height: 15vw;
+  padding: 2vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search h3{
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.search h3 img{
+  width: 8vw;
+}
+.search form{
+  display: flex;
+  align-items: center;
+  /* gap: 2vw; */
+  justify-content: end;
+  width: 40vw;
+  height: 4vh;
+  /* background-color: yellowgreen; */
+}
+.search form input{
+  height: 80%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  width: 80%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 2vw;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.search form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(255, 255, 255, 0.418);
+  border: none;
+  height: 80%;
+  cursor: pointer;
+  color: black;
+  width: 20%;
+}
+.search form button svg{
+  width: 4vw;
+  color: white;
+}
+
+  .info-city{
 
   font-size: 4vw;
 }
