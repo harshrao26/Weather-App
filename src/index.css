@@ -222,6 +222,9 @@ input[type=text] {
 .add-info-box h1{
   font-size: 3vw;
 } 
+.add-info-box h2{
+  font-size: 2vw;
+} 
 .add-info-box img{
   width: 40%;
 }

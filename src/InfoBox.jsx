@@ -58,18 +58,25 @@ function InfoBox({ info, city }) {
         <div className="add-info-box backdrop-sepia-0 bg-white/30 rounded-xl ">
           <img src={Wind} alt="" className="w-[5vw] mb-[0.2vw] " />
           <h1 className="">{info.wind} KM/H</h1>
+          <h2>Wind</h2>
+
         </div>
         <div className="add-info-box backdrop-sepia-0 bg-white/30 rounded-xl">
-          <img src={Sunrise} alt="" className="w-[5vw] mb-[1vw] " />
+          <img src={Sunrise} alt="" className="w-[4vw] mb-[1vw] " />
           <h1>{Sunrisetime}</h1>
+          <h2>Sunrise</h2>
+
         </div>
         <div className="add-info-box backdrop-sepia-0 bg-white/30 rounded-xl">
           <img src={Sunset} alt="" className="w-[5vw] mb-[0.2vw] " />
           <h1>{Sunsettime}</h1>
+          <h2>Sunset</h2>
         </div>
         <div className="add-info-box backdrop-sepia-0 bg-white/30 rounded-xl">
           <img src={Humidity} alt="" className="w-[5vw] mb-[0.2vw] " />
           <h1>{info.humidity}%</h1>
+          <h2>Humidity</h2>
+
         </div>
       </div>
     </div>
