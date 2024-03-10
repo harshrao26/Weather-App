@@ -1,22 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: plain-font;
+  src: url(./assets/font/plain-regular-webfont.ttf);
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
   font-weight: 600;
+  font-family: plain-font;
   /* overflow: hidden; */
 }
-
 .search{
   padding: 1vw 2vw;
   /* background-color: yellowgreen; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.search h3{
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.search h3 img{
+  width: 4vw;
 }
 .search form{
   display: flex;
@@ -87,11 +103,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
  .info-city{
 
   font-size: 4vw;

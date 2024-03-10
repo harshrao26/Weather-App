@@ -62,7 +62,7 @@ function SearchBox({ updateInfo }) {
 
   return (
     <div className="search backdrop-sepia-0 bg-white/30">
-      <h3>Search For Weather</h3>
+       <h3><img src="./cloudy-line.svg" alt="" />Weather App</h3>
       <form onSubmit={handleSubmit}>
         <TextField
           id="city"
