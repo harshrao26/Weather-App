@@ -136,6 +136,7 @@ input[type=text] {
 .search h3{
   font-size: 4vw;
   display: flex;
+  width: 40vw;
   align-items: center;
   gap: 1vw;
 }
@@ -147,9 +148,13 @@ input[type=text] {
   align-items: center;
   /* gap: 2vw; */
   justify-content: end;
-  width: 50vw;
+  width: 60vw;
   height: 4vh;
   /* background-color: yellowgreen; */
+}
+.search form p{
+  font-size: 3vw;
+  margin-left: 1vw;
 }
 .search form input{
   height: 100%;
