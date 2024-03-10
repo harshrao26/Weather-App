@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-weight: 600;
+  overflow: hidden;
+}
+.search{
+  padding: 1vw 2vw;
+  /* background-color: yellowgreen; */
+  display: flex;
+  margin-bottom: 2vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.search form{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  justify-content: center;
+}
+.search form button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+.info-box{
+  /* background-color: rgb(71, 255, 126); */
+  width: 100vw;
+  height: 100vh;
+}
+.info-box h3{
+  font-size: 5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: white;
+}
