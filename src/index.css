@@ -1,20 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
   font-weight: 600;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .search{
   padding: 1vw 2vw;
   /* background-color: yellowgreen; */
   display: flex;
-  margin-bottom: 2vw;
   align-items: center;
   justify-content: space-between;
 }
@@ -31,15 +31,110 @@
   color: black;
 }
 .info-box{
-  /* background-color: rgb(71, 255, 126); */
-  width: 100vw;
-  height: 100vh;
+  /* background-color: yellowgreen; */
 }
-.info-box h3{
-  font-size: 5vw;
-  font-weight: 400;
-  text-transform: uppercase;
+.info-city{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+.info-temp{
+  display: flex;
+  justify-content: center;
+  font-size: 8vw;
   line-height: 1;
-  letter-spacing: -2px;
-  color: white;
+}
+.info-temp span{
+  font-size: 2.5vw;
+}
+.min-max{
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  font-size: 1.5vw;
+}
+.min-max span{
+  align-items: center;
+  font-size: 1vw;
+}
+.min-max .min, .max{
+  display: flex;
+}
+.info-description{
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Additional-info{
+  display: flex;
+  justify-content:space-around;
+  /* margin-top: 5vw; */
+}
+.add-info-box{
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.add-info-box h1{
+  font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ .info-city{
+
+  font-size: 4vw;
+}
+.info-temp{
+  display: flex;
+  justify-content: center;
+  font-size: 16vw;
+  line-height: 1;
+}
+.info-temp span{
+  font-size: 5vw;
+}
+.min-max{
+  font-size: 4vw;
+}
+.min-max span{
+  font-size: 3vw;
+}
+.info-description{
+  font-size: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Additional-info{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* margin-top: 5vw; */
+}
+.add-info-box{
+  width: 20vw;
+
+  height: 20vw;
+  display: flex;
+  font-weight: 500;
+
+}
+.add-info-box h1{
+  font-size: 3vw;
+} 
+.add-info-box img{
+  width: 40%;
+}
 }
